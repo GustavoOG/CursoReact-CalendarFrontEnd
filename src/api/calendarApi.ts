@@ -7,13 +7,13 @@ const calendarApi = axios.create({ baseURL: VITE_API_URL });
 //Todo: configurar interceptores
 
 const onRequest = (config: InternalAxiosRequestConfig): InternalAxiosRequestConfig => {
-    //const { method, url, } = config;
+    const { method, url, } = config;
     // Set Headers Here
     config.headers['x-token'] = localStorage.getItem('token');
 
     // Check Authentication Here
     // Set Loading Start Here
-    //console.log(`🚀 [API] ${method?.toUpperCase()} ${url} | Request`);
+    console.log(`🚀 [API] ${method?.toUpperCase()} ${url} | Request`);
 
     // if (method === "get") {
     //   config.timeout = 15000;
