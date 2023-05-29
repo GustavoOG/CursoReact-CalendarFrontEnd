@@ -1,4 +1,4 @@
-# Calednar APP
+# Calendar APP
 
 ## Development pasos
 
